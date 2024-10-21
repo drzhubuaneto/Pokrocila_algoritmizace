@@ -12,6 +12,7 @@ public class uloha3 {
         int TF3 = s.nextInt();
         double RI = (TF1 + TF2 + TF3 - 200) / 10.0;
         System.out.printf("Ruffierův index: %.1f\n", RI);
+        s.close();
         
         String zdatnost;
         if (RI < 0) {
