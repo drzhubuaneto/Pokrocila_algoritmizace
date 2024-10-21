@@ -10,7 +10,7 @@ public class uloha7 {
         int vzorky = 0;
         int vyhovujici = 0;
 
-        System.out.println("Zadejte teploty a tepové frekvence (konec 0):");
+        System.out.println("zadej teploty a tepové frekvence (konečná bude 0):");
         while (true) {
             double teplota = s.nextDouble();
             if (teplota == 0) break;
@@ -21,10 +21,11 @@ public class uloha7 {
             }
         }
 
-        System.out.println("Počet vzorků splňujících definované rozmezí: " + vyhovujici);
+        System.out.println("počet vzorků splňujících definované rozmezí je " + vyhovujici);
         if (vzorky > 0) {
             int procento = (vyhovujici * 100) / vzorky;
-            System.out.println("Procento pacientů splňujících definované rozmezí: " + procento + "%");
+            System.out.println("procento pacientů splňujících definované rozmezí je " + procento + "%");
         }
+        s.close();
     }
 }

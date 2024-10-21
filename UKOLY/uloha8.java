@@ -13,39 +13,37 @@ public class uloha8 {
         int sumaTepu = 0;
         int splnenePodminky = 0;
 
-        System.out.println("Zadejte teploty a tepové frekvence (konec 0):");
+        System.out.println("zadej teploty ve stupních Celsia a tepové frekvence (v bpm) (konečná bude 0):");
         while (true) {
             double teplota = s.nextDouble();
             if (teplota == 0) break;
             int tep = s.nextInt();
             vzorky++;
 
-            // Zjištění maximální teploty
             if (teplota > maxTeplota) {
                 maxTeplota = teplota;
             }
 
-            // Kontrola podmínek
-            if (teplota > 36 && teplota < 37 && tep >= 55 && tep <= 85) {
+            if (teplota > 36 && teplota < 37 && tep >= 55 && tep <= 85) { //podmínky
                 vyhovujici++;
                 sumaTepu += tep;
                 splnenePodminky++;
             }
         }
 
-        System.out.println("Počet vzorků splňujících definované rozmezí: " + vyhovujici);
+        System.out.println("počet vzorků splňujících definované rozmezí je " + vyhovujici);
         if (vzorky > 0) {
             int procento = (vyhovujici * 100) / vzorky;
-            System.out.println("Procento pacientů splňujících definované rozmezí: " + procento + "%");
+            System.out.println("procento pacientů splňujících definované rozmezí je " + procento + "%");
         }
 
-        // Výpis maximální teploty
-        System.out.printf("Nejvyšší teplota: %.1f\n", maxTeplota);
+        System.out.printf("nejvyšší teplota ve stupních Celsia je %.1f\n", maxTeplota);
 
         // Výpočet průměrné tepové frekvence
         if (splnenePodminky > 0) {
             double prumernaTepovaFrekvence = (double) sumaTepu / splnenePodminky;
-            System.out.printf("Průměrná tepová frekvence: %.1f\n", prumernaTepovaFrekvence);
+            System.out.printf("průměrná tepovka v bpm je %.1f\n", prumernaTepovaFrekvence);
         }
+        s.close();
     }
 }

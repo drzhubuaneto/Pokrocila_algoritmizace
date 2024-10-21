@@ -6,15 +6,16 @@ public class uloha4 {
     //alg., co určí, zda zadaná 3 čísla mohou být stranami pravoúh. troj.
     public static void main(String[] args) {
         Scanner s = new Scanner(System.in);
-        System.out.print("Zadejte délky tří stran: ");
+        System.out.print("zadej délky tří stran trojúhelníku v cm: ");
         double a = s.nextDouble();
         double b = s.nextDouble();
         double c = s.nextDouble();
 
         if (isRightTriangle(a, b, c)) {
-            System.out.println("Trojúhelník je pravoúhlý.");
+            System.out.println("trojúhelník je pravoúhlý");
         } else {
-            System.out.println("Trojúhelník není pravoúhlý.");
+            System.out.println("trojúhelník není pravoúhlý");
+        s.close();
         }
     }
 

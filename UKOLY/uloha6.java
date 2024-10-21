@@ -8,7 +8,7 @@ public class uloha6 {
         Scanner s = new Scanner(System.in);
         int count = 0;
 
-        System.out.println("Zadejte sekvenci čísel (konec 0):");
+        System.out.println("zadej sekvenci čísel (konečná bude 0):");
         while (true) {
             int n = s.nextInt();
             if (n == 0) break;
@@ -16,6 +16,8 @@ public class uloha6 {
                 count++;
             }
         }
-        System.out.println("Počet lichých čísel dělitelných 3: " + count);
+
+        System.out.println("počet lichých čísel dělitelných 3 je " + count);
+        s.close();
     }
 }
