@@ -1,4 +1,3 @@
-
 import java.util.ArrayList;
 import java.util.Scanner;
 
@@ -25,19 +24,18 @@ public class miniprojekt2a {
             }
         }
 
-        System.out.println("\nzadane cisla:");
+        System.out.print("\nzadane cisla:");
         for (int i = 0; i < cisla.size(); i++) {
             int hodnota = cisla.get(i);
-            System.out.println(hodnota);
+            System.out.printf(" %d,", hodnota);
             }
 
-        System.out.println("\nnasobky cisel:");
+        System.out.print("\nnasobky cisel:");
         for (int i = 0; i < cisla.size(); i++) {
             int nasobek = cisla.get(i);
-            System.out.println(nasobek*nasobekpo0);
+            System.out.printf(" %d,", nasobek*nasobekpo0);
             }
         
         sc.close();
-        }
-    
+    }
 }

@@ -23,16 +23,16 @@ public class miniprojekt2b {
             }
         }
         
-        System.out.println("\nprumer:");
+        System.out.print("\nprumer:");
         double prumer = (double) soucet / sekvence.size();
-        System.out.println(prumer);
+        System.out.print(prumer);
 
-        System.out.println("\nsekvence pozpatku:");
+        System.out.print("\nsekvence pozpatku:");
         for (int i = sekvence.size() - 1; i >=0; i--) {
-            System.out.println(sekvence.get(i) + "");
+            System.out.printf("%d, ", sekvence.get(i));
             }
 
         sc.close();
-        
-        }
+
     }
+}
