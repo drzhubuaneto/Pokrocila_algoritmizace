@@ -1,4 +1,4 @@
-package UKOLY;
+package UKOLY1;
 
 import java.util.Scanner;
 
