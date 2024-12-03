@@ -1,3 +1,4 @@
+package miniprojekt;
 import java.util.Scanner;
 
 public class miniprojekt1a {

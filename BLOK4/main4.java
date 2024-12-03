@@ -11,7 +11,7 @@ public class main4 {
         graph.put(2, Arrays.asList(0, 5));
         graph.put(3, Arrays.asList(1));
         graph.put(4, Arrays.asList(1, 5));
-        graph.put(5, Arrays.asList(2, 4));
+        graph.put(5, Arrays.asList(2, 5));
 
         System.out.println(" prohledavani grafu do hloubky z uzlu 0:");
         vyhledavani.depthFirstSearch(graph, 0);

@@ -1,3 +1,4 @@
+package miniprojekt;
 import java.util.ArrayList;
 import java.util.Scanner;
 
