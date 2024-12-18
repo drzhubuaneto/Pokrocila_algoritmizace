@@ -22,7 +22,7 @@ public class automat {
 
     public void setInput(int i) { //nastaveni vstupu
         if (i < 0 || i > 2) {
-            throw new IllegalArgumentException("Vstup musí být 0, 1 nebo 2.");
+            throw new IllegalArgumentException("vstup musi byt 0, 1 nebo 2");
         }
         input = i;
     }
